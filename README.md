@@ -1,31 +1,4 @@
-# create-t3-turbo
-
-> [!NOTE]
->
-> create-t3-turbo now uses better-auth for authentication!
-> Look out for bugs as we're working through the last issues,
-> especially, the oauth proxy might not play very nice with Expo
-> so you might need to disable that in [`@acme/auth`](./packages/auth/src/index.ts)
-
-## Installation
-
-> [!NOTE]
->
-> Make sure to follow the system requirements specified in [`package.json#engines`](./package.json#L4) before proceeding.
-
-There are two ways of initializing an app using the `create-t3-turbo` starter. You can either use this repository as a template:
-
-![use-as-template](https://github.com/t3-oss/create-t3-turbo/assets/51714798/bb6c2e5d-d8b6-416e-aeb3-b3e50e2ca994)
-
-or use Turbo's CLI to init your project (use PNPM as package manager):
-
-```bash
-npx create-turbo@latest -e https://github.com/t3-oss/create-t3-turbo
-```
-
 ## About
-
-Ever wondered how to migrate your T3 application into a monorepo? Stop right here! This is the perfect starter repo to get you running with the perfect stack!
 
 It uses [Turborepo](https://turborepo.org) and contains:
 
