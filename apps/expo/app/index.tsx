@@ -1,15 +1,9 @@
 import { HomeScreen } from 'app/features/home/screen'
-import { Stack } from 'expo-router'
+import { LoginScreen } from 'app/features/auth/login-screen'
+import { useAuth } from 'app/provider/AuthProvider'
 
-export default function Screen() {
-  return (
-    <>
-      <Stack.Screen
-        options={{
-          title: 'Home',
-        }}
-      />
-      <HomeScreen />
-    </>
-  )
+export default function Index() {
+  const { session, loading } = useAuth()
+  if (loading) return null
+  return session ? <HomeScreen /> : <LoginScreen />
 }
